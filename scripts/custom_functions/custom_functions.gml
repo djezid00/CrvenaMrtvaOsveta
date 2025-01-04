@@ -17,7 +17,8 @@ draw_sprite_ext(weapon.sprite,0,x + _xOffset,centerY + _yOffset,1,_weaponYscl,ai
 
 //damage calculation 
 	//damage create event
-function get_damaged_create(_hp =10){
+function get_damaged_create(_hp =15){
+	maxHp = _hp;
 	hp =_hp;
 	damageList = ds_list_create()
 
@@ -71,9 +72,8 @@ for (var i = 0; i < _damageListSize; i++) {
 // Handle death
 if (hp <= 0) {
     instance_destroy();
-}
-
-
-
-
+	}
+	
+	//clamp hp
+	hp = clamp(hp, 0, maxHp)
 }
