@@ -1,0 +1,7 @@
+Backup 02
+Finished VIDEO 7
+DATE: 4.1.2025. TIME:16:29
+Added some tiles, with bigger room and viewport
+Added camera object that follows player
+
+
