@@ -8,4 +8,5 @@ var _healtPercent = hp / maxHp;
 var _hpImage = _healtPercent * (sprite_get_number (sEnemyHealth) -1)
 draw_sprite (sEnemyHealth, _hpImage, x,y - sprite_height/2 -1)
 
-draw_text(x,y,string (hp));
+//draw hp as a string
+//draw_text(x,y,string (hp));

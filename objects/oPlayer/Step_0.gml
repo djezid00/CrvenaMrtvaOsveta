@@ -1,12 +1,12 @@
 //get input
-rightKey = keyboard_check(ord("D"));
-leftKey = keyboard_check( ord("A"));
-upKey = keyboard_check( ord ("W"));
-downKey = keyboard_check( ord ("S"));
-shootKey = mouse_check_button_pressed(mb_left);
+rightKey = global.rightKey;
+leftKey = global.leftKey;
+upKey = global.upKey;
+downKey = global.downKey;
+shootKey = global.shootKey;
 //weapo swap on mouse scroll
-scrollUp = mouse_wheel_up();
-scrollDown = mouse_wheel_down();
+scrollUp = global.scrollUp;
+scrollDown = global.scrollDown;
 
 //player movement
 #region
@@ -169,6 +169,16 @@ if (soundTimer > 0) {
 }
 
 #endregion
+
+//death 
+if hp <= 0
+{
+	//create game over object
+	instance_create_depth(0,0,-10000,oGameOverScreen);
+	//destroy player
+	instance_destroy();
+	
+}
 
 
 
