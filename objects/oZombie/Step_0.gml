@@ -1,6 +1,35 @@
+//code commands
+var _wallCollisions = true;
+var _getDamage = true;
+
 //state machine
 switch (state)
 {
+	//spawn state
+	case -1:
+		
+		if image_alpha < 1
+		{
+			spd = 0;
+			image_alpha += fadeSpd;
+		}
+		
+		_wallCollisions = false;
+		_getDamage = false;
+	
+		if image_alpha >= 1
+		{
+			spd = emergeSpd;
+			dir = 270;
+		}
+		
+		if !place_meeting(x, y, oWall)
+		{
+			state = 0;
+		}
+	
+	break;	
+	
 	case 0:
 	//chase the player
 
@@ -83,20 +112,28 @@ if dir > 90 && dir <270
 
 
 //collisons
-if place_meeting( x + xspd, y, oWall) || place_meeting( x + xspd, y, oEnemyParent)
-{
-	xspd =0;
-}
+if _wallCollisions == true
+	if place_meeting( x + xspd, y, oWall)
+	{
+		xspd =0;
+	}
 
-if place_meeting(x, y + yspd,oWall) || place_meeting( x , y +yspd, oEnemyParent)
-{ 
-	yspd =0;
-}
+	if place_meeting(x, y + yspd, oWall)
+	{ 
+		yspd =0;
+	}
+	
+if place_meeting(x + xspd, y, oEnemyParent)
+	xspd = 0;
+if place_meeting(x, y + yspd, oEnemyParent)
+	yspd = 0;
+	
 x +=xspd;
 y +=yspd;
 
 depth = -y;
 
 // Inherit the parent event (getting damaged and dying)
-event_inherited();
+if _getDamage == true
+	event_inherited();
 

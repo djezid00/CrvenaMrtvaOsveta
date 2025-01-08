@@ -1,8 +1,8 @@
 // Inherit the parent event
 event_inherited();
-hp =15;
+hp = 10;
 spd = 0;
-chaseSpd =1.2;
+chaseSpd = 1;
 dir = 0;
 xspd =0;
 yspd =0;
@@ -11,7 +11,10 @@ yspd =0;
 face = 1;
 
 //state machine
-state =0;
+state = 0;
+//spawn state
+fadeSpd = 1/15;
+emergeSpd = 4;
 
 //shooting state
 coolDownTime = 4*60;

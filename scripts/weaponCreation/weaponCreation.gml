@@ -34,7 +34,7 @@ Shotgun : new create_weapon(
 	sShotgun,
 	sprite_get_bbox_right(sShotgun)- sprite_get_xoffset(sShotgun),
 	oBulletShotgun,
-	75,
+	65,
 	7,
 	45
 )
