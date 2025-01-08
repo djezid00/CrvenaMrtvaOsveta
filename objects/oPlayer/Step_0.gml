@@ -1,12 +1,12 @@
 //get input
-rightKey = keyboard_check(ord("D"));
-leftKey = keyboard_check( ord("A"));
-upKey = keyboard_check( ord ("W"));
-downKey = keyboard_check( ord ("S"));
-shootKey = mouse_check_button_pressed(mb_left);
+rightKey = global.rightKey;
+leftKey = global.leftKey;
+upKey = global.upKey;
+downKey = global.downKey;
+shootKey = global.shootKey;
 //weapo swap on mouse scroll
-scrollUp = mouse_wheel_up();
-scrollDown = mouse_wheel_down();
+scrollUp = global.scrollUp;
+scrollDown = global.scrollDown;
 
 //player movement
 #region
@@ -120,7 +120,7 @@ if shootKey && shootTimer <=0
 	}
 	
 	
-	// Start sound sequence
+// Start sound sequence
     soundStage = 1; // Set the stage to play the first sound
     soundTimer = room_speed * 0.1; // 0.5-second delay
     audio_play_sound(gunshotCock, 10, false); // Play the cocking sound
@@ -169,6 +169,17 @@ if (soundTimer > 0) {
 }
 
 #endregion
+
+
+//death 
+if hp <= 0
+{
+	//create game over object
+	instance_create_depth(0,0,-10000,oGameOverScreen);
+	//destroy player
+	instance_destroy();
+	
+}
 
 
 

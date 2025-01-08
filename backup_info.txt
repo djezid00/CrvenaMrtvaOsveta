@@ -1,5 +1,5 @@
-Backup 03
-Finished VIDEO 8
-DATE: 4.1.2025. TIME:19:50
-Now enemies can shoot, chase player and they  have healthbars, enemies are active only in the field of camera 
+Backup 01
+Finished VIDEO 6
+DATE: 2.1.2025. TIME:20:18
+added enemies and improved damage system 
 
