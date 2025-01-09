@@ -1,5 +1,5 @@
-Backup 01
-Finished VIDEO 6
-DATE: 2.1.2025. TIME:20:18
-added enemies and improved damage system 
+Backup 06
+MID VIDEO 11
+DATE: 9.1.2025. TIME:20:00
+added collectibles (health and weapons) 
 

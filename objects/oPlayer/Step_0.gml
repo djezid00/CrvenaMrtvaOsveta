@@ -84,8 +84,10 @@ if (scrollUp) {
     if (selectedWeapon < 0) {
         selectedWeapon = array_length(_playerWeapons) - 1; 
     }
-    weapon = _playerWeapons[selectedWeapon];
+    
 }
+weapon = _playerWeapons[selectedWeapon];
+
 
 if (scrollDown) {
     // Scroll down - next weapon
@@ -93,9 +95,9 @@ if (scrollDown) {
     if (selectedWeapon >= array_length(_playerWeapons)) {
         selectedWeapon = 0; 
     }
-    weapon = _playerWeapons[selectedWeapon];
+   
 }
-
+ weapon = _playerWeapons[selectedWeapon];
 //shoot the weapon
 if shootTimer > 0 {shootTimer --};
 if shootKey && shootTimer <=0
@@ -123,7 +125,7 @@ if shootKey && shootTimer <=0
 // Start sound sequence
     soundStage = 1; // Set the stage to play the first sound
     soundTimer = room_speed * 0.1; // 0.5-second delay
-    audio_play_sound(gunshotCock, 10, false); // Play the cocking sound
+   // audio_play_sound(gunshotCock, 10, false); // Play the cocking sound
 
 }
 
@@ -159,6 +161,17 @@ if (soundTimer > 0) {
     if (soundStage == 1) {
         // Play the gunshot sound
         audio_play_sound(gunshotShotgun_fire, 10, false);
+        soundStage = 2;
+        soundTimer = room_speed * 0.5; // 0.5-second delay
+    } else if (soundStage == 2) {
+        // Play the casing sound
+        audio_play_sound(gunshotSoundCasing, 10, false);
+        soundStage = 0; // Reset the stage
+    }
+}  else if (selectedWeapon == 3) { // SOUND EFFECT FOR SHOTGUN 
+    if (soundStage == 1) {
+        // Play the gunshot sound
+        audio_play_sound(WinchesterFire, 10, false);
         soundStage = 2;
         soundTimer = room_speed * 0.5; // 0.5-second delay
     } else if (soundStage == 2) {
