@@ -59,16 +59,31 @@ aimDir =point_direction(x,centerY,mouse_x,mouse_y)
 // sprite control
 #region
 //set the player sprite
-face = round(aimDir / 90);
-if face == 4 {face =0};
-mask_index = sPlayerDown;
-sprite_index = sprite[face];
 
-//stop animation if idle
-//if xspd ==0 && yspd ==0
-//{
-//	image_index =0;
-//}
+
+if (aimDir >= 0 && aimDir < 90) || (aimDir >= 330 && aimDir < 360) {
+	face = 0;
+}
+
+if (aimDir >= 90 && aimDir < 210) {
+	face = 1;
+}
+
+if (aimDir >= 210 && aimDir < 330) {
+	face = 2;
+}
+
+
+if xspd == 0 && yspd == 0
+{
+    // miran
+    sprite_index = sprite[face];
+}
+else
+{
+    // inače hoda
+    sprite_index = walkingSprite[face];
+}
 
 #endregion
 

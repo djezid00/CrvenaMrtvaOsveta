@@ -36,8 +36,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sTest",
-    "path":"sprites/sTest/sTest.yy",
+    "name":"sEnemyRightWalking",
+    "path":"sprites/sEnemyRightWalking/sEnemyRightWalking.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -15,6 +15,22 @@ if aimDir > 90 && aimDir < 270
 draw_sprite_ext(weapon.sprite,0,x + _xOffset,centerY + _yOffset,1,_weaponYscl,aimDir,c_white,1);
 }
 
+
+function draw_enemy_weapon() {
+	
+var _weaponYscl  =1;
+
+//flipping the weapon on y axis
+if dir > 90 && dir < 270
+{
+	_weaponYscl = -1;
+}
+	
+draw_sprite_ext(sSmith_Wesson_Model_3 ,0,x ,y ,1, _weaponYscl, dir, c_white,1);
+
+}
+
+
 //damage calculation 
 	//damage create event
 function get_damaged_create(_hp =15){

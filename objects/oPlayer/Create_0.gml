@@ -9,13 +9,19 @@ yspd=0;
 //sprite control 
 centerYoffset =1;
 
-weaponOffSetDist = 3;
+weaponOffSetDist = -3;
 aimDir =0;
 face =3;
 sprite[0] = sPlayerRight;
-sprite[1] = sPlayerUp;
-sprite[2] = sPlayerLeft;
-sprite[3] = sPlayerDown;
+sprite[1] = sPlayerLeft;
+sprite[2] = sPlayerDown;
+
+walkingSprite[0] = sPlayerRightWalking;
+walkingSprite[1] = sPlayerLeftWalking;
+walkingSprite[2] = sPlayerDownWalking;
+
+mask_index = sPlayerDown;
+
 
 //weapon info 
 shootTimer =0;
