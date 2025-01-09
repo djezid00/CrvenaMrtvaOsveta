@@ -1,2 +1,2 @@
-damage =1;
+damage =5;
 hitConfirm = false;

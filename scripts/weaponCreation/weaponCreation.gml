@@ -1,13 +1,16 @@
 //constructor for weapons
 
-function create_weapon (_sprite =sGun , _weaponLength,_bulletObj, _cooldown = 10,_bulletNum =1, _spread =0 ) constructor
+function create_weapon (_sprite =sGun , _weaponLength,_bulletObj, _cooldown = 10, _bulletNum =1, _spread =0,_pickupSprite  ) constructor
 {
 	sprite = _sprite;
 	length = _weaponLength;
 	bulletObj = _bulletObj;
 	cooldown = _cooldown;
+	
 	bulletNum=_bulletNum;
 	spread = _spread;
+	pickupSprite = _pickupSprite;
+	
 }
 
 
@@ -36,7 +39,26 @@ Shotgun : new create_weapon(
 	oBulletShotgun,
 	65,
 	7,
-	45
+	45,
+	sShotgun
+),
+Winchester : new create_weapon(
+	sWinchester,
+	sprite_get_bbox_right(sWinchester)- sprite_get_xoffset(sWinchester),
+	oBullet_Colt1,
+	47,
+	1,
+	0,
+	sWinchester
+),
+SawedShotgun : new create_weapon(
+	sSawedOffShotgun,
+	sprite_get_bbox_right(sSawedOffShotgun)- sprite_get_xoffset(sSawedOffShotgun),
+	oBulletShotgun,
+	65,
+	7,
+	45,
+	sSawedOffShotgun
 )
 }
 
