@@ -1198,8 +1198,8 @@
   "maintainGms1Font":false,
   "name":"FontGameOver",
   "parent":{
-    "name":"Crvena Mrtva Osveta",
-    "path":"Crvena Mrtva Osveta.yyp",
+    "name":"Fonts",
+    "path":"folders/Fonts.yy",
   },
   "pointRounding":0,
   "ranges":[
