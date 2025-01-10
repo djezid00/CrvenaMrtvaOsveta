@@ -115,30 +115,12 @@ xspd = lengthdir_x(spd, dir)
 yspd = lengthdir_y(spd, dir)
 
 //correct face 
-if (dir >= 0 && dir < 90) || (dir >= 330 && dir < 360) {
-	face = 0;
-}
-
-if (dir >= 90 && dir < 210) {
-	face = 1;
-}
-
-if (dir >= 210 && dir < 330) {
-	face = 2;
-}
-
-
-if xspd == 0 && yspd == 0
+if dir > 90 && dir <270
 {
-    // miran
-    sprite_index = sprite[face];
+	face =-1
+}else{
+	face =1;
 }
-else
-{
-    // inače hoda
-    sprite_index = walkingSprite[face];
-}
-
 
 
 //collisons

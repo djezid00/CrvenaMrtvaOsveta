@@ -23,14 +23,6 @@ windupTime =60;
 recoverTime =45;
 bulletInst =noone;
 
-sprite[0] = sEnemyRight;
-sprite[1] = sEnemyLeft;
-sprite[2] = sEnemyDown;
-
-walkingSprite[0] = sEnemyRightWalking;
-walkingSprite[1] = sEnemyLeftWalking;
-walkingSprite[2] = sEnemyDownWalking;
-
 
 
 

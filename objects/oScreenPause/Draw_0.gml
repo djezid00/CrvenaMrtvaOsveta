@@ -24,9 +24,6 @@ draw_text_transformed(_camX + _camW/2, _camY + _camH/ + 2 + _gameoverOffset, "PA
 var _restartOffset = 50;
 draw_text_transformed (_camX + _camW/2, _camY + _camH/2 + _restartOffset, "-Press P to Resume-", 1,1,0)
 
-
-
-
 //reset draw settings
 draw_set_halign(fa_left);
 draw_set_valign(fa_top);

@@ -1,6 +1,7 @@
 //drawing the weapon
-function draw_my_weapon() {
-var _weaponYscl  =1;
+function draw_my_weapon ()
+{
+	var _weaponYscl  =1;
 
 var _xOffset = lengthdir_x(weaponOffSetDist, aimDir);
 var _yOffset = lengthdir_y(weaponOffSetDist, aimDir);
@@ -14,21 +15,6 @@ if aimDir > 90 && aimDir < 270
 if instance_exists(weapon.sprite){
 draw_sprite_ext(weapon.sprite,0,x + _xOffset,centerY + _yOffset,1,_weaponYscl,aimDir,c_white,1);
 }
-}
-
-
-function draw_enemy_weapon() {
-	
-var _weaponYscl = 1;
-
-//flipping the weapon on y axis
-if dir > 90 && dir < 270
-{
-	_weaponYscl = -1;
-}
-	
-draw_sprite_ext(sSmith_Wesson_Model_3 ,0,x ,y ,1, _weaponYscl, dir, c_white,1);
-
 }
 
 

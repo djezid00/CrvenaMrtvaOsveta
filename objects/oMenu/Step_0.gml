@@ -28,11 +28,7 @@ if accept_key {
 				break;
 	
 				case 1:
-					audio_play_sound(WinchesterFire, 1, false); // Play gunshot
-                    name_sequence_active = true;   
-					option_offset_Y = 100;
-                    alarm[0] = room_speed * 0.2;  
-                    menu_level = 1; 
+					menu_level = 1;
 				break;
 	
 				case 2:
@@ -41,18 +37,20 @@ if accept_key {
 			}
 		break;
 		
-        case 1:
-            switch (position) {
-                case 0: // Back
-                    menu_level = 0;         // Return to the main menu
-                    name_sequence_active = false; // Clear the names
-					option_offset_Y = 200;
-                    break;
-            }
-            break;
+		case 1:
+			switch(position)
+			{
+				case 0:
+					
+				break;
+	
+				case 1:
+					menu_level = 0;
+				break;
+			}
+		break;
 	}
 	
 	if _sml != menu_level {position = 0};
 	option_length = array_length(option[menu_level]);
 }
-
