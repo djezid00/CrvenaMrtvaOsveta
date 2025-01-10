@@ -1,7 +1,6 @@
 //drawing the weapon
-function draw_my_weapon ()
-{
-	var _weaponYscl  =1;
+function draw_my_weapon() {
+var _weaponYscl  =1;
 
 //flipping the weapon on y axis
 if aimDir > 90 && aimDir < 270
@@ -12,8 +11,6 @@ if aimDir > 90 && aimDir < 270
 draw_sprite_ext(weapon.sprite,0,x,y,1,_weaponYscl,aimDir,c_white,1);
 }
 
-<<<<<<< Updated upstream
-=======
 function draw_enemy_weapon() {
 	
 var _weaponYscl = 1;
@@ -29,7 +26,6 @@ draw_sprite_ext(sSmith_Wesson_Model_3 ,0,x,y + 35 ,1, _weaponYscl, dir, c_white,
 }
 
 
->>>>>>> Stashed changes
 //damage calculation 
 	//damage create event
 function get_damaged_create(_hp =15){

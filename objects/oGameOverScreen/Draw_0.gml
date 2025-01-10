@@ -13,7 +13,7 @@ draw_rectangle_color(_camX,_camY,_camX + _camW, _camY + _camH, c_black, c_black,
 draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
 draw_set_alpha(alpha);
-draw_set_font(Font2)
+draw_set_font(FontMenu)
 //"game over"
 var _gameoverOffset = -32;
 draw_text_transformed(_camX + _camW/2, _camY + _camH/ + 2 + _gameoverOffset, "Game Over",3,3,0)
