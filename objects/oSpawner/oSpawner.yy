@@ -9,8 +9,8 @@
   "name":"oSpawner",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"oEnvironment",
+    "path":"folders/Objects/oEnvironment.yy",
   },
   "parentObjectId":{
     "name":"oSolidWall",

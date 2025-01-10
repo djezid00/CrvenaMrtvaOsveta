@@ -9,8 +9,8 @@
   "name":"oBulletShotgun",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"oBullets",
+    "path":"folders/Objects/oBullets.yy",
   },
   "parentObjectId":{
     "name":"oBullet_Colt1",

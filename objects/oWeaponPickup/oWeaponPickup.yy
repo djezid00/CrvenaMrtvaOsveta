@@ -9,8 +9,8 @@
   "name":"oWeaponPickup",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"oPlayerRelated",
+    "path":"folders/Objects/oPlayerRelated.yy",
   },
   "parentObjectId":null,
   "persistent":false,

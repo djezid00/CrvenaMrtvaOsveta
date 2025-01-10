@@ -7,6 +7,41 @@ shootKey = global.shootKey;
 //weapo swap on mouse scroll
 scrollUp = global.scrollUp;
 scrollDown = global.scrollDown;
+startKeyPressed =global.startKeyPressed;
+escKey = global.escKey;
+nKey = global.quit;
+yKey = global.resume
+
+//pause menu
+//if escKey
+//{
+//	if !instance_exists(oDoYoYield)
+//	{
+//		instance_create_depth(0,0,0, oDoYoYield);
+//	}else{
+//		instance_destroy(oDoYoYield)
+//	}
+
+//}	
+
+
+//ESC menu
+//pause menu
+//if escKey
+//{
+//	room_goto(1);
+//}
+
+
+//pausing 
+if instance_exists(oScreenPause)
+{
+	image_speed =0;
+	exit;
+}else{
+	image_speed =1;
+}
+
 
 //player movement
 #region
@@ -35,9 +70,6 @@ if place_meeting(x,y+yspd, oWall)
 	yspd =0;
 }
 
-
-
-
 //move the player
 x += xspd;
 y +=yspd;
@@ -46,8 +78,12 @@ y +=yspd;
 depth = -bbox_bottom;
 #endregion
 
-//get damaged
-get_damaged(oDamagePlayer)
+
+//screen shake on damagep
+if (get_damaged(oDamagePlayer)) {
+    show_debug_message("Player damaged!"); // Debug message to ensure this block runs
+    screen_shake(3);
+}
 
 //player aiming
 centerY = y +centerYoffset;
