@@ -45,7 +45,7 @@ Shotgun : new create_weapon(
 Winchester : new create_weapon(
 	sWinchester,
 	sprite_get_bbox_right(sWinchester)- sprite_get_xoffset(sWinchester),
-	oBullet_Colt1,
+	oBullet_Winchester,
 	47,
 	1,
 	0,

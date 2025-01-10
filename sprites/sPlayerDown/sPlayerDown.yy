@@ -2,10 +2,17 @@
   "$GMSprite":"",
   "%Name":"sPlayerDown",
   "bboxMode":2,
+<<<<<<< Updated upstream
   "bbox_bottom":17,
   "bbox_left":9,
   "bbox_right":11,
   "bbox_top":2,
+=======
+  "bbox_bottom":66,
+  "bbox_left":0,
+  "bbox_right":22,
+  "bbox_top":0,
+>>>>>>> Stashed changes
   "collisionKind":1,
   "collisionTolerance":0,
   "DynamicTexturePage":false,

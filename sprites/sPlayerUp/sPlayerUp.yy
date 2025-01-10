@@ -2,10 +2,17 @@
   "$GMSprite":"",
   "%Name":"sPlayerUp",
   "bboxMode":2,
+<<<<<<< Updated upstream:sprites/sPlayerUp/sPlayerUp.yy
   "bbox_bottom":19,
   "bbox_left":8,
   "bbox_right":12,
   "bbox_top":4,
+=======
+  "bbox_bottom":65,
+  "bbox_left":0,
+  "bbox_right":24,
+  "bbox_top":0,
+>>>>>>> Stashed changes:sprites/sEnemyLeft/sEnemyLeft.yy
   "collisionKind":1,
   "collisionTolerance":0,
   "DynamicTexturePage":false,
@@ -23,7 +30,7 @@
   ],
   "name":"sPlayerUp",
   "nineSlice":null,
-  "origin":4,
+  "origin":1,
   "parent":{
     "name":"Player",
     "path":"folders/Sprites/Player.yy",
@@ -75,8 +82,13 @@
     ],
     "visibleRange":null,
     "volume":1.0,
+<<<<<<< Updated upstream:sprites/sPlayerUp/sPlayerUp.yy
     "xorigin":10,
     "yorigin":10,
+=======
+    "xorigin":12,
+    "yorigin":0,
+>>>>>>> Stashed changes:sprites/sEnemyLeft/sEnemyLeft.yy
   },
   "swatchColours":null,
   "swfPrecision":0.5,

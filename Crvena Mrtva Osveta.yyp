@@ -37,6 +37,7 @@
     {"id":{"name":"FontKills","path":"fonts/FontKills/FontKills.yy",},},
     {"id":{"name":"oBullet_Colt1","path":"objects/oBullet_Colt1/oBullet_Colt1.yy",},},
     {"id":{"name":"oBullet_SW2","path":"objects/oBullet_SW2/oBullet_SW2.yy",},},
+    {"id":{"name":"oBullet_Winchester","path":"objects/oBullet_Winchester/oBullet_Winchester.yy",},},
     {"id":{"name":"oBulletEnemy","path":"objects/oBulletEnemy/oBulletEnemy.yy",},},
     {"id":{"name":"oBulletShotgun","path":"objects/oBulletShotgun/oBulletShotgun.yy",},},
     {"id":{"name":"oCamera","path":"objects/oCamera/oCamera.yy",},},
@@ -76,7 +77,16 @@
     {"id":{"name":"sColt_Single_Action_Army","path":"sprites/sColt_Single_Action_Army/sColt_Single_Action_Army.yy",},},
     {"id":{"name":"sCrate","path":"sprites/sCrate/sCrate.yy",},},
     {"id":{"name":"sDamageTest","path":"sprites/sDamageTest/sDamageTest.yy",},},
+    {"id":{"name":"sEagleEyeAttack","path":"sprites/sEagleEyeAttack/sEagleEyeAttack.yy",},},
+    {"id":{"name":"sEagleEyeLeftWalking","path":"sprites/sEagleEyeLeftWalking/sEagleEyeLeftWalking.yy",},},
+    {"id":{"name":"sEagleEyeRightWalking","path":"sprites/sEagleEyeRightWalking/sEagleEyeRightWalking.yy",},},
     {"id":{"name":"sEnemy","path":"sprites/sEnemy/sEnemy.yy",},},
+<<<<<<< Updated upstream
+=======
+    {"id":{"name":"sEnemyDead","path":"sprites/sEnemyDead/sEnemyDead.yy",},},
+    {"id":{"name":"sEnemyDown","path":"sprites/sEnemyDown/sEnemyDown.yy",},},
+    {"id":{"name":"sEnemyDownWalking","path":"sprites/sEnemyDownWalking/sEnemyDownWalking.yy",},},
+>>>>>>> Stashed changes
     {"id":{"name":"sEnemyHealth","path":"sprites/sEnemyHealth/sEnemyHealth.yy",},},
     {"id":{"name":"sGrass","path":"sprites/sGrass/sGrass.yy",},},
     {"id":{"name":"sHealthBar","path":"sprites/sHealthBar/sHealthBar.yy",},},

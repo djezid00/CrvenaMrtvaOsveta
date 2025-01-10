@@ -8,7 +8,7 @@ if (hp <= 0) {
 	//drop health on random
 	var _chance = irandom (100)
 		 
-	if _chance < 20
+	if _chance < 10
 	{
 		instance_create_depth(x,y,depth,oHealthPickup);
 	}
