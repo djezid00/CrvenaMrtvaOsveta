@@ -10,8 +10,8 @@
   "name":"oBullet_Colt1",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"oBullets",
+    "path":"folders/Objects/oBullets.yy",
   },
   "parentObjectId":{
     "name":"oDamageEnemy",

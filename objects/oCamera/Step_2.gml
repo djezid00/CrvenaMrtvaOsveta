@@ -11,6 +11,41 @@ if instance_exists(oPlayer)
 	y = oPlayer.y - _camH /2;
 }
 
+//camera shaking
+
+//xShake
+
+if xShakeAmount > 0
+{
+	xShakeDir +=xShakeDirSpd;
+	xShakeAmount -=xShakeAmounSpd;
+}else{
+	xShakeAmount=0;
+	xShakeDir=0;
+}
+xShake = dsin(xShakeDir) * xShakeAmount;
+
+//add in the camera shake
+
+
+
+//y shake
+
+if yShakeAmount > 0
+{
+	yShakeDir +=yShakeDirSpd;
+	yShakeAmount -=yShakeAmounSpd;
+}else{
+	yShakeAmount=0;
+	yShakeDir=0;
+}
+yShake = dsin(yShakeDir) * yShakeAmount;
+
+//add in the camera shake
+y +=yShake;
+x +=xShake;
+
+
 
 //clamp camera to room borders
 x = clamp(x, 0, room_width-_camW);

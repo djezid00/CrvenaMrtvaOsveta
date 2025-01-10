@@ -11,8 +11,8 @@
   "name":"oZombie",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"oEnemy",
+    "path":"folders/Objects/oEnemy.yy",
   },
   "parentObjectId":{
     "name":"oEnemyParent",

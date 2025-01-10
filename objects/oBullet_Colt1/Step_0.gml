@@ -1,3 +1,14 @@
+//pausing on player getting hit
+if instance_exists(oScreenPause_old)
+{
+	image_speed =0;
+	exit;
+}else{
+	image_speed =1;
+}
+
+
+
 //move
 xspd = lengthdir_x(spd,dir)
 yspd = lengthdir_y(spd,dir)

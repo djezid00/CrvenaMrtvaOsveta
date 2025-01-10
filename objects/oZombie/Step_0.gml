@@ -1,3 +1,15 @@
+//pausing on player getting hit
+if instance_exists(oScreenPause)
+{
+	image_speed =0;
+	exit;
+}else{
+	image_speed =1;
+}
+
+
+
+
 //code commands
 var _wallCollisions = true;
 var _getDamage = true;
