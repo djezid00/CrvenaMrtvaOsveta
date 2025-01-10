@@ -34,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sBulletEnemy",
-    "path":"sprites/sBulletEnemy/sBulletEnemy.yy",
+    "name":"sBullet_Colt",
+    "path":"sprites/sBullet_Colt/sBullet_Colt.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -12,7 +12,19 @@ escKey = global.escKey;
 nKey = global.quit;
 yKey = global.resume
 
-//pause menu
+/**/
+if startKeyPressed
+{
+		if !instance_exists(oScreenPause)
+		{
+			instance_create_depth(0,0,0, oScreenPause);
+		}else{
+			instance_destroy(oScreenPause)}
+
+}
+
+
+//////pause menu
 //if escKey
 //{
 //	if !instance_exists(oDoYoYield)
@@ -119,6 +131,7 @@ else
     // inače hoda
     sprite_index = walkingSprite[face];
 }
+
 
 
 #endregion

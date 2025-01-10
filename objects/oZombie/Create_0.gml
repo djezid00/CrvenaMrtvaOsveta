@@ -32,5 +32,3 @@ walkingSprite[1] = sEnemyLeftWalking;
 walkingSprite[2] = sEnemyDownWalking;
 
 
-
-

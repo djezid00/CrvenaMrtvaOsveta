@@ -139,8 +139,6 @@ else
     sprite_index = walkingSprite[face];
 }
 
-
-
 //collisons
 if _wallCollisions == true
 	if place_meeting( x + xspd, y, oWall)
