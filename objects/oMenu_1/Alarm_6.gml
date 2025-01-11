@@ -1,4 +1,4 @@
-if name_sequence_active { audio_play_sound(gunshotShotgun_fire, 1, false); 
+if name_sequence_active { audio_play_sound(creditsShotgun_fire, 1, false); 
 
 alarm[7] = room_speed * 0.3;
 }

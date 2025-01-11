@@ -1,6 +1,6 @@
 {
   "$GMSound":"",
-  "%Name":"gunShotShotgun_load",
+  "%Name":"creditsShotgun_fire",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -9,8 +9,8 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":0.730125,
-  "name":"gunShotShotgun_load",
+  "duration":1.194667,
+  "name":"creditsShotgun_fire",
   "parent":{
     "name":"Sounds",
     "path":"folders/Sounds.yy",
@@ -19,7 +19,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"gunShotShotgun_load.wav",
+  "soundFile":"creditsShotgun_fire.wav",
   "type":0,
   "volume":1.0,
 }

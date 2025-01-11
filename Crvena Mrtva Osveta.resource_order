@@ -44,6 +44,7 @@
     {"name":"rmMenu","order":3,"path":"rooms/rmMenu/rmMenu.yy",},
     {"name":"Room1","order":2,"path":"rooms/Room1/Room1.yy",},
     {"name":"weaponCreation","order":1,"path":"scripts/weaponCreation/weaponCreation.yy",},
+    {"name":"creditsShotgun_fire","order":9,"path":"sounds/creditsShotgun_fire/creditsShotgun_fire.yy",},
     {"name":"gunshotCock","order":1,"path":"sounds/gunshotCock/gunshotCock.yy",},
     {"name":"gunshotShotgun_fire","order":2,"path":"sounds/gunshotShotgun_fire/gunshotShotgun_fire.yy",},
     {"name":"gunShotShotgun_load","order":3,"path":"sounds/gunShotShotgun_load/gunShotShotgun_load.yy",},
