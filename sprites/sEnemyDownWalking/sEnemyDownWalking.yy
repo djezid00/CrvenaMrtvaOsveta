@@ -28,7 +28,7 @@
   ],
   "name":"sEnemyDownWalking",
   "nineSlice":null,
-  "origin":4,
+  "origin":1,
   "parent":{
     "name":"Enemies",
     "path":"folders/Sprites/Enemies.yy",
@@ -96,7 +96,7 @@
     "visibleRange":null,
     "volume":1.0,
     "xorigin":11,
-    "yorigin":34,
+    "yorigin":0,
   },
   "swatchColours":null,
   "swfPrecision":0.5,

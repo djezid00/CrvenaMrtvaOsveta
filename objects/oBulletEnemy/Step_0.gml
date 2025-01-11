@@ -1,4 +1,7 @@
 //state machine0
+
+image_angle = dir;
+
 switch (state)
 {
 	//wait for enemy

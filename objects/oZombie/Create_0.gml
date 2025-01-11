@@ -13,7 +13,7 @@ face = 1;
 //state machine
 state = 0;
 //spawn state
-fadeSpd = 1/15;
+fadeSpd = 1;
 emergeSpd = 4;
 
 //shooting state
