@@ -26,4 +26,10 @@ sprite[2] = sEnemyDown;
 
 walkingSprite[0] = sEnemyRightWalking;
 walkingSprite[1] = sEnemyLeftWalking;
+<<<<<<< Updated upstream
 walkingSprite[2] = sEnemyDownWalking;
+=======
+walkingSprite[2] = sEnemyDownWalking;
+
+path = path_add()
+>>>>>>> Stashed changes

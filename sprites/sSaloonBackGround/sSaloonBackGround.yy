@@ -2,10 +2,17 @@
   "$GMSprite":"",
   "%Name":"sSaloonBackGround",
   "bboxMode":0,
+<<<<<<< Updated upstream:sprites/sSaloonBackGround/sSaloonBackGround.yy
   "bbox_bottom":999,
   "bbox_left":407,
   "bbox_right":884,
   "bbox_top":686,
+=======
+  "bbox_bottom":22,
+  "bbox_left":2,
+  "bbox_right":70,
+  "bbox_top":0,
+>>>>>>> Stashed changes:sprites/sEagleEyeDead/sEagleEyeDead.yy
   "collisionKind":1,
   "collisionTolerance":0,
   "DynamicTexturePage":false,

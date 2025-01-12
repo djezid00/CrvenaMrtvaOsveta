@@ -2,9 +2,15 @@
   "$GMSprite":"",
   "%Name":"Sprite37",
   "bboxMode":0,
+<<<<<<< Updated upstream:sprites/Sprite37/Sprite37.yy
   "bbox_bottom":109,
   "bbox_left":0,
   "bbox_right":211,
+=======
+  "bbox_bottom":25,
+  "bbox_left":0,
+  "bbox_right":6,
+>>>>>>> Stashed changes:sprites/sHealthPickup/sHealthPickup.yy
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -16,7 +22,11 @@
   ],
   "gridX":0,
   "gridY":0,
+<<<<<<< Updated upstream:sprites/Sprite37/Sprite37.yy
   "height":110,
+=======
+  "height":26,
+>>>>>>> Stashed changes:sprites/sHealthPickup/sHealthPickup.yy
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"6cf8f284-f62b-4438-87bb-68bd9c83b14f","blendMode":0,"displayName":"default","isLocked":false,"name":"6cf8f284-f62b-4438-87bb-68bd9c83b14f","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
@@ -75,8 +85,13 @@
     ],
     "visibleRange":null,
     "volume":1.0,
+<<<<<<< Updated upstream:sprites/Sprite37/Sprite37.yy
     "xorigin":0,
     "yorigin":0,
+=======
+    "xorigin":3,
+    "yorigin":26,
+>>>>>>> Stashed changes:sprites/sHealthPickup/sHealthPickup.yy
   },
   "swatchColours":null,
   "swfPrecision":0.5,
@@ -86,5 +101,9 @@
   },
   "type":0,
   "VTile":false,
+<<<<<<< Updated upstream:sprites/Sprite37/Sprite37.yy
   "width":212,
+=======
+  "width":7,
+>>>>>>> Stashed changes:sprites/sHealthPickup/sHealthPickup.yy
 }
