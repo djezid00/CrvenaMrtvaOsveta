@@ -30,8 +30,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"Enemies",
-    "path":"folders/Sprites/Enemies.yy",
+    "name":"AngryFatman",
+    "path":"folders/Sprites/Enemies/AngryFatman.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

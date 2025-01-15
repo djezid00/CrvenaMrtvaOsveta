@@ -26,8 +26,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"Enemies",
-    "path":"folders/Sprites/Enemies.yy",
+    "name":"EagleEye",
+    "path":"folders/Sprites/Enemies/EagleEye.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

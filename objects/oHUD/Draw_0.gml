@@ -23,8 +23,8 @@ if instance_exists(oPlayer){
 	}
 }
 
-var _enemyCountOffset = 35;
-var _ecHudX = _hudX;
+var _enemyCountOffset = 55;
+var _ecHudX = _hudX + 2;
 var _ecHudY = _hudY +_enemyCountOffset;
 draw_sprite(sKillCount, 0, _ecHudX, _ecHudY);
 
@@ -33,5 +33,5 @@ draw_set_valign(fa_top);
 draw_set_font(FontKills);
 draw_set_color($FFFFFF);
 
-draw_text(_ecHudX + 22, _ecHudY + 19, string(global.enemyKillCount));
-draw_text(_ecHudX + 36, _ecHudY + 19, "/" + string(global.enemyRoomMax));
+draw_text(_ecHudX + 22, _ecHudY + 2, string(global.enemyKillCount));
+draw_text(_ecHudX + 36, _ecHudY + 2, "/" + string(global.enemyRoomMax));

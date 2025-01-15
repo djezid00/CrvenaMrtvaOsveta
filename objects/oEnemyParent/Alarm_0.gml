@@ -1,0 +1,2 @@
+instance_destroy(oDeadEagleEye)
+instance_destroy(oDeadEnemy)
