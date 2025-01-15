@@ -36,8 +36,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sTest",
-    "path":"sprites/sTest/sTest.yy",
+    "name":"sEnemyDown",
+    "path":"sprites/sEnemyDown/sEnemyDown.yy",
   },
   "spriteMaskId":null,
   "visible":true,

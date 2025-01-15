@@ -13,7 +13,7 @@ face = 1;
 //state machine
 state = 0;
 //spawn state
-fadeSpd = 1/15;
+fadeSpd = 1;
 emergeSpd = 4;
 
 //shooting state
@@ -23,6 +23,12 @@ windupTime =60;
 recoverTime =45;
 bulletInst =noone;
 
+sprite[0] = sEnemyRight;
+sprite[1] = sEnemyLeft;
+sprite[2] = sEnemyDown;
 
+walkingSprite[0] = sEnemyRightWalking;
+walkingSprite[1] = sEnemyLeftWalking;
+walkingSprite[2] = sEnemyDownWalking;
 
 

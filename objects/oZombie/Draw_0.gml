@@ -1,8 +1,6 @@
-//draw flipped
-draw_sprite_ext(sprite_index, image_index,x,y,face,image_yscale,image_angle,image_blend,image_alpha);
+draw_self();
 
-
-
+draw_enemy_weapon();
 //draw hp
 var _healtPercent = hp / maxHp;
 var _hpImage = _healtPercent * (sprite_get_number (sEnemyHealth) -1)
