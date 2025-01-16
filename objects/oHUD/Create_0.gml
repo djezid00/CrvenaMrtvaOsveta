@@ -5,7 +5,7 @@ playerHp =0;
 playerMaxHp =0;
 
 //enemy management
-global.enemyRoomMax = 40;
+global.enemyRoomMax = 100;
 global.activeEnemyMax = 10;
 global.totalEnemySpawned = 0;
 global.enemyKillCount = 0;

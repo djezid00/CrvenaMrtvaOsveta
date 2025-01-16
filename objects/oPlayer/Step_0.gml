@@ -25,16 +25,16 @@ if startKeyPressed
 
 
 //////pause menu
-//if escKey
-//{
-//	if !instance_exists(oDoYoYield)
-//	{
-//		instance_create_depth(0,0,0, oDoYoYield);
-//	}else{
-//		instance_destroy(oDoYoYield)
-//	}
+if escKey
+{
+	if !instance_exists(oDoYoYield)
+	{
+		instance_create_depth(0,0,0, oDoYoYield);
+	}else{
+		instance_destroy(oDoYoYield)
+	}
 
-//}	
+}	
 
 
 //ESC menu
@@ -46,7 +46,7 @@ if startKeyPressed
 
 
 //pausing 
-if instance_exists(oScreenPause)
+if instance_exists(oScreenPause) || instance_exists(oDoYoYield)
 {
 	image_speed =0;
 	exit;

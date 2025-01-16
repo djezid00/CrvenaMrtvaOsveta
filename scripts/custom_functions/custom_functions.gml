@@ -21,7 +21,7 @@ if dir > 90 && dir < 270
 	_weaponYscl = -1;
 }
 	
-draw_sprite_ext(sSmith_Wesson_Model_3 ,0,x,y + 35 ,1, _weaponYscl, dir, c_white,1);
+draw_sprite_ext(sSmith_Wesson_Model_3 ,0,x,y + 35,1, _weaponYscl, dir, c_white,1);
 
 }
 
@@ -88,6 +88,8 @@ for (var i = 0; i < _damageListSize; i++) {
 if (hp <= 0) {
     instance_destroy();
 	}
+	
+	
 	
 	//clamp hp
 	hp = clamp(hp, 0, maxHp)

@@ -1,5 +1,5 @@
 //pausing on player getting hit
-if instance_exists(oScreenPause_old)
+if instance_exists(oScreenPause)
 {
 	image_speed =0;
 	exit;

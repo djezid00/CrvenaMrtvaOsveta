@@ -2,7 +2,7 @@ get_damaged(oDamageParent);
 
 //show damage
 var _healthPercent =1 - (hp/maxHp);
-image_index = _healthPercent *image_number
+image_index = _healthPercent * image_number
 
 if hp <=0 
 {
