@@ -1,6 +1,7 @@
 // Pausing on player getting hit
 if (instance_exists(oScreenPause)) || instance_exists(oDoYoYield) {
 	image_speed =0;
+	path_end();
 	exit;
 }else{
 	image_speed =1;
