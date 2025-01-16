@@ -3,7 +3,7 @@
   "%Name":"sEagleEyeDead",
   "bboxMode":0,
   "bbox_bottom":22,
-  "bbox_left":2,
+  "bbox_left":1,
   "bbox_right":70,
   "bbox_top":0,
   "collisionKind":1,
