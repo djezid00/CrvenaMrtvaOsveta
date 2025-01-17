@@ -45,6 +45,7 @@ draw_set_alpha(1);
 
 // Input Logic for Quit and Resume
 if (keyboard_check_pressed(ord("Y"))) {
+	mp_grid_destroy(global.grid);
     game_end(); // Quit the game
 }
 

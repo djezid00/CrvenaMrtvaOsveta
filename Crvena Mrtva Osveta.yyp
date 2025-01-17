@@ -94,6 +94,7 @@
     {"id":{"name":"MainSoundtrack","path":"sounds/MainSoundtrack/MainSoundtrack.yy",},},
     {"id":{"name":"TNTexplosion","path":"sounds/TNTexplosion/TNTexplosion.yy",},},
     {"id":{"name":"WinchesterFire","path":"sounds/WinchesterFire/WinchesterFire.yy",},},
+    {"id":{"name":"sAmmoCount","path":"sprites/sAmmoCount/sAmmoCount.yy",},},
     {"id":{"name":"sAngryFatman","path":"sprites/sAngryFatman/sAngryFatman.yy",},},
     {"id":{"name":"sAngryFatmanShooting","path":"sprites/sAngryFatmanShooting/sAngryFatmanShooting.yy",},},
     {"id":{"name":"sBullet_Colt_1","path":"sprites/sBullet_Colt_1/sBullet_Colt_1.yy",},},

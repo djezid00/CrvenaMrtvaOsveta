@@ -61,6 +61,7 @@
     {"name":"MainSoundtrack","order":6,"path":"sounds/MainSoundtrack/MainSoundtrack.yy",},
     {"name":"TNTexplosion","order":8,"path":"sounds/TNTexplosion/TNTexplosion.yy",},
     {"name":"WinchesterFire","order":7,"path":"sounds/WinchesterFire/WinchesterFire.yy",},
+    {"name":"sAmmoCount","order":14,"path":"sprites/sAmmoCount/sAmmoCount.yy",},
     {"name":"sAngryFatman","order":1,"path":"sprites/sAngryFatman/sAngryFatman.yy",},
     {"name":"sBullet_Colt_1","order":13,"path":"sprites/sBullet_Colt_1/sBullet_Colt_1.yy",},
     {"name":"sBullet_Colt","order":11,"path":"sprites/sBullet_Colt/sBullet_Colt.yy",},

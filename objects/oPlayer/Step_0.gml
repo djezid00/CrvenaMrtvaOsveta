@@ -10,7 +10,8 @@ scrollDown = global.scrollDown;
 startKeyPressed =global.startKeyPressed;
 escKey = global.escKey;
 nKey = global.quit;
-yKey = global.resume
+yKey = global.resume;
+rKey = global.rKey;
 
 /**/
 if startKeyPressed
@@ -43,7 +44,10 @@ if escKey
 //{
 //	room_goto(1);
 //}
-
+if(rKey && !isReloading && weapon.totalAmmo > 0) {
+	isReloading = true;
+    reloadTimer = weapon.reloadTime;
+}
 
 //pausing 
 if instance_exists(oScreenPause) || instance_exists(oDoYoYield)
@@ -151,7 +155,7 @@ if (scrollUp) {
     
 }
 weapon = _playerWeapons[selectedWeapon];
-
+global.weapon = weapon;
 
 if (scrollDown) {
     // Scroll down - next weapon
@@ -164,11 +168,13 @@ if (scrollDown) {
  weapon = _playerWeapons[selectedWeapon];
 //shoot the weapon
 if shootTimer > 0 {shootTimer --};
-if shootKey && shootTimer <=0
+if !isReloading && shootKey && shootTimer <=0 && weapon.currentMagazineAmmo > 0
 { 
 	
 	//reset the timer 
-	shootTimer =weapon.cooldown;
+	shootTimer = weapon.cooldown;
+	
+	weapon.currentMagazineAmmo--;
 	//create the bullet with correct offset from end of gun 
 	var _xOffset = lengthdir_x(weapon.length + weaponOffSetDist, aimDir);
 	var _yOffset = lengthdir_y(weapon.length + weaponOffSetDist, aimDir);
@@ -192,6 +198,19 @@ if shootKey && shootTimer <=0
    // audio_play_sound(gunshotCock, 10, false); // Play the cocking sound
 
 }
+
+//reload logic
+if (isReloading) {
+    reloadTimer--;
+    if (reloadTimer <= 0) {
+        weapon.totalAmmo -= weapon.magazineAmmo;
+        weapon.currentMagazineAmmo = weapon.magazineAmmo;
+        isReloading = false;
+    }
+}
+
+
+
 
 // shooting sound handle
 #region

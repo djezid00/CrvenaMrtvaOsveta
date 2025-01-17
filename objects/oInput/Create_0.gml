@@ -8,5 +8,7 @@ global.scrollDown =0;
 global.escKey =0;
 global.quit =0;
 global.resume=0;
+global.rKey=0;
+
 
 

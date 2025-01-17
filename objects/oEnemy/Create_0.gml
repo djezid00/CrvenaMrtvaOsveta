@@ -34,3 +34,5 @@ walkingSprite[2] = sEnemyDownWalking;
 path = path_add();
 range = 70;
 
+soundTimer = 0;
+soundStage = 0;

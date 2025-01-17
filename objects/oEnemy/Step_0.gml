@@ -74,6 +74,9 @@ switch (state)
 			if (mp_grid_path(global.grid, path, x, y, oPlayer.x, oPlayer.y, 1)) {
 				path_start(path, chaseSpd, path_action_stop, false);
 			}
+			else {
+				show_debug_message("ne radi!")
+			}
 			
 		}
 		spd = chaseSpd;
@@ -120,7 +123,9 @@ switch (state)
 		//create the bullet
 		if shootTimer ==1
 		{
-			bulletInst = instance_create_depth(x,y+35,depth-100,oBulletEnemy);		
+			bulletInst = instance_create_depth(x,y+35,depth-100,oBulletEnemy);
+			soundTimer = room_speed * 0.5; // 0.5-second delay
+			soundStage = 1;
 		}
 		
 		//shoot the bullet after the windup time is over
@@ -141,6 +146,14 @@ switch (state)
 		
 		#endregion
 	break; 
+}
+
+if(soundTimer > 0) {
+	soundTimer--;
+}
+else if(soundStage == 1) {
+	audio_play_sound(gunShotSmithAndWesson_fire, 10, false);
+	soundStage = 0;
 }
 
 
