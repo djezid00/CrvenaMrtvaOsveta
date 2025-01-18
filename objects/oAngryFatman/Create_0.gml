@@ -23,3 +23,6 @@ state = 0; // 0 = Shooting, 1 = Cooldown
 
 sprite[0] = sAngryFatman;
 sprite[1] = sAngryFatmanShooting;
+
+soundTimer = 0;
+soundStage = 0;

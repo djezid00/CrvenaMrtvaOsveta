@@ -26,6 +26,9 @@ switch (state) {
             if (instance_exists(bulletInst)) {
                 bulletInst.state = 1; // Bullet starts moving immediately
                 bulletInst.dir = dir; // Shoot toward the player
+				
+				soundTimer = room_speed * 0.2; // 0.5-second delay
+				soundStage = 1;
             }
 
             // Reset the shoot timer
@@ -55,6 +58,14 @@ switch (state) {
             state_timer = 0;
         }
         break;
+}
+
+if(soundTimer > 0) {
+	soundTimer--;
+}
+else if(soundStage == 1) {
+	audio_play_sound(gunShotSmithAndWesson_fire, 10, false);
+	soundStage = 0;
 }
 
 // Update position (no movement, but keeping this for consistency)

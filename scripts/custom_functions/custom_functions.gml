@@ -45,8 +45,8 @@ function get_damage_cleanup(){
 
 }
 
-function get_damaged(_damagedObj){
-	
+function get_damaged(_damagedObj) {
+	var hitConfirm = false;
 // Receive damage
 if (place_meeting(x, y, _damagedObj)) {
     // Create a list of damage instances
@@ -62,9 +62,11 @@ if (place_meeting(x, y, _damagedObj)) {
             // Add the new damage instance to the damage list
             ds_list_add(damageList, _inst);
             // Take damage
+			
             hp -= _inst.damage;
             // Mark the damage instance as processed (optional)
              _inst.hitConfirm = true;
+			 hitConfirm = true;
         }
     }
 
@@ -93,6 +95,7 @@ if (hp <= 0) {
 	
 	//clamp hp
 	hp = clamp(hp, 0, maxHp)
+	return hitConfirm;
 }
 
 //camera shake

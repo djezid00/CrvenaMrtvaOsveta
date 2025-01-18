@@ -47,6 +47,7 @@ if escKey
 if(rKey && !isReloading && weapon.totalAmmo > 0) {
 	isReloading = true;
     reloadTimer = weapon.reloadTime;
+	//audio_play_sound(weapon.soundOfReload, 10, false);
 }
 
 //pausing 
@@ -98,6 +99,7 @@ depth = -bbox_bottom;
 //screen shake on damagep
 if (get_damaged(oDamagePlayer)) {
     show_debug_message("Player damaged!"); // Debug message to ensure this block runs
+	//audio_play_sound(hitSound, 1, 0);
     screen_shake(3);
 }
 
@@ -166,11 +168,20 @@ if (scrollDown) {
    
 }
  weapon = _playerWeapons[selectedWeapon];
+ 
 //shoot the weapon
 if shootTimer > 0 {shootTimer --};
+
+
+if (!isReloading && shootKey && shootTimer <=0 && weapon.currentMagazineAmmo ==0)
+{
+	audio_play_sound(emptyMag, 10, false);
+	shootTimer =15;
+}
+
 if !isReloading && shootKey && shootTimer <=0 && weapon.currentMagazineAmmo > 0
 { 
-	
+	show_debug_message(isReloading)
 	//reset the timer 
 	shootTimer = weapon.cooldown;
 	
@@ -195,17 +206,25 @@ if !isReloading && shootKey && shootTimer <=0 && weapon.currentMagazineAmmo > 0
 // Start sound sequence
     soundStage = 1; // Set the stage to play the first sound
     soundTimer = room_speed * 0.1; // 0.5-second delay
-   // audio_play_sound(gunshotCock, 10, false); // Play the cocking sound
+	//audio_play_sound(gunshotCock, 10, false); // Play the cocking sound
 
 }
 
 //reload logic
+
 if (isReloading) {
-    reloadTimer--;
-    if (reloadTimer <= 0) {
-        weapon.totalAmmo -= weapon.magazineAmmo;
-        weapon.currentMagazineAmmo = weapon.magazineAmmo;
-        isReloading = false;
+    if (reloadTimer) {
+		_ammo = weapon.magazineAmmo - weapon.currentMagazineAmmo;
+		
+		if(_ammo > weapon.totalAmmo) {
+			reloadTimer = 0;
+			alarm[2] = 1;
+		}
+		else {
+			reloadTimer = 0;
+			alarm[0] = 1;
+		}
+		
     }
 }
 
@@ -274,7 +293,6 @@ if hp <= 0
 	instance_create_depth(0,0,-10000,oGameOverScreen);
 	//destroy player
 	instance_destroy();
-	
 }
 
 

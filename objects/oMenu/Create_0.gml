@@ -19,3 +19,6 @@ name_filip = false;
 name_david = false;
 name_ivan = false;
 name_gamemaker = false;
+
+view_wport[0] = display_get_width();
+view_hport[0] = display_get_height();

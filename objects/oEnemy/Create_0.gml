@@ -19,7 +19,7 @@ emergeSpd = 4;
 //shooting state
 coolDownTime = 4*60;
 shootTimer =irandom(coolDownTime);
-windupTime =60;
+windupTime =45;
 recoverTime =45;
 bulletInst =noone;
 

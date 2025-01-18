@@ -1,8 +1,8 @@
 // Inherit the parent event
 event_inherited();
 
-damage = 0.6;
-spd = 10;
-maxDist = 150;
+damage = 0.9;
+spd = 12;
+maxDist = 175;
 
 

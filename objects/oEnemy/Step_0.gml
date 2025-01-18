@@ -123,13 +123,13 @@ switch (state)
 		//create the bullet
 		if shootTimer ==1
 		{
-			bulletInst = instance_create_depth(x,y+35,depth-100,oBulletEnemy);
+			bulletInst = instance_create_depth(x,y+35,depth-10,oBulletEnemy);
 			soundTimer = room_speed * 0.5; // 0.5-second delay
 			soundStage = 1;
 		}
 		
 		//shoot the bullet after the windup time is over
-		if shootTimer ==windupTime && instance_exists(bulletInst){
+		if shootTimer == windupTime && instance_exists(bulletInst){
 			bulletInst.state =1;
 		}
 		
