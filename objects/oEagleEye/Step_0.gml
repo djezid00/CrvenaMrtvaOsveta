@@ -1,14 +1,39 @@
 // Pausing on player getting hit
 if (instance_exists(oScreenPause)) || instance_exists(oDoYoYield) {
-    spd = 0;
-    exit;
-} else {
-    spd = 1;
+	image_speed =0;
+	path_end();
+	exit;
+}else{
+	image_speed =1;
 }
 
 // Initialize movement and attack logic variables
 _wallCollisions = true;
 _getDamage = true;
+
+var left = (x - 12) div 10;
+var right = (x + 12) div 10;
+var top = y div 10; 
+var bottom = (y + 60) div 10;
+
+var prev_left = (xprevious - 12) div 10;
+var prev_right = (xprevious + 12) div 10;
+var prev_top = yprevious div 10;
+var prev_bottom = (yprevious + 60) div 10;
+
+    // Clear previous cells
+    for (var i = prev_left; i <= prev_right; i++) {
+        for (var j = prev_top; j <= prev_bottom; j++) {
+            mp_grid_clear_cell(global.grid, i/10, j/10);
+        }
+    }
+
+    // Mark new cells
+    for (var i = left; i <= right; i++) {
+        for (var j = top; j <= bottom; j++) {
+            mp_grid_add_cell(global.grid, i/10, j/10);
+        }
+    }
 
 // State machine
 switch (state) {
@@ -30,6 +55,9 @@ switch (state) {
     case 0:  // Chase player state
         if (instance_exists(oPlayer)) {
             dir = point_direction(x, y, oPlayer.x, oPlayer.y);
+			if (mp_grid_path(global.grid, path, x, y, oPlayer.x, oPlayer.y, 1)) {
+				path_start(path, chaseSpd, path_action_stop, false);
+			}
             spd = chaseSpd;
             
             // If the player is within swing range, attack

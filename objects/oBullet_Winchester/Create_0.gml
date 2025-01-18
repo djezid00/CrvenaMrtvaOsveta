@@ -4,7 +4,7 @@ event_inherited();
 //new properties
 //spd = 15;
 enemyDestroy = true
-damage = 3.5;
+damage = 5;
 
 
 

@@ -27,11 +27,14 @@ var _enemyCountOffset = 55;
 var _ecHudX = _hudX + 2;
 var _ecHudY = _hudY +_enemyCountOffset;
 draw_sprite(sKillCount, 0, _ecHudX, _ecHudY);
+draw_sprite(sAmmoCount, 0, _ecHudX, _ecHudY + 30);
 
 draw_set_halign(fa_left);
 draw_set_valign(fa_top);
 draw_set_font(FontKills);
 draw_set_color($FFFFFF);
 
-draw_text(_ecHudX + 22, _ecHudY + 2, string(global.enemyKillCount));
-draw_text(_ecHudX + 36, _ecHudY + 2, "/" + string(global.enemyRoomMax));
+draw_text(_ecHudX + 22, _ecHudY + 3, string(global.enemyKillCount));
+draw_text(_ecHudX + 44, _ecHudY + 3, "/" + string(global.enemyRoomMax));
+draw_text(_ecHudX + 22, _ecHudY + 33, string(global.weapon.currentMagazineAmmo));
+draw_text(_ecHudX + 30, _ecHudY + 33, "/" + string(global.weapon.totalAmmo));

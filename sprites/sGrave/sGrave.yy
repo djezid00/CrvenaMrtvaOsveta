@@ -20,6 +20,7 @@
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"6b06e94e-873f-43fb-9605-206bd5111e52","blendMode":0,"displayName":"default","isLocked":false,"name":"6b06e94e-873f-43fb-9605-206bd5111e52","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"61922c68-4e82-4bd0-a762-d057798ace00","blendMode":0,"displayName":"Layer 1","isLocked":false,"name":"61922c68-4e82-4bd0-a762-d057798ace00","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"sGrave",
   "nineSlice":null,

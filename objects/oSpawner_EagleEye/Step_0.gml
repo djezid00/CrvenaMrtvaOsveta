@@ -9,7 +9,7 @@ if instance_number(oEnemyParent) >= global.activeEnemyMax || global.totalEnemySp
 if timer >= spawnTime && !place_meeting(x, y, oEagleEye)
 {
 	//create an enemy
-	var _inst = instance_create_depth(x, y ,depth-1, oEagleEye);
+	var _inst = instance_create_depth(x, y + 30 ,depth-1, oEagleEye);
 	with(_inst)
 	{
 		image_alpha = 0;

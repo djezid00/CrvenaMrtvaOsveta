@@ -2,7 +2,7 @@
 event_inherited();
 hp = 10;
 spd = 0;
-chaseSpd = 1.9;
+chaseSpd = 1;
 dir = 0;
 xspd =0;
 yspd =0;
@@ -31,4 +31,8 @@ walkingSprite[0] = sEnemyRightWalking;
 walkingSprite[1] = sEnemyLeftWalking;
 walkingSprite[2] = sEnemyDownWalking;
 
+path = path_add();
+range = 70;
 
+soundTimer = 0;
+soundStage = 0;

@@ -1,4 +1,4 @@
-if !instance_exists(oPlayer){instance_destroy();};
+if !instance_exists(oPlayer) {instance_destroy();};
 var _camX = camera_get_view_x(view_camera[0]);
 var _camW = camera_get_view_width(view_camera[0]);
 var _camY = camera_get_view_y(view_camera[0]);

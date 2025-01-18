@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sCrosshairs_1",
-    "path":"sprites/sCrosshairs_1/sCrosshairs_1.yy",
+    "name":"sCrosshairs",
+    "path":"sprites/sCrosshairs/sCrosshairs.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -4,7 +4,7 @@ event_inherited();
 // Initialize variables
 hp = 10;
 spd = 0;
-chaseSpd = 1.9;
+chaseSpd = 1.0;
 dir = 0;
 xspd = 0;
 yspd = 0;
@@ -39,3 +39,5 @@ swingRange = 5;  // Range within which the enemy can attack
 swingDamage = 0.1;  // Damage dealt by the swing
 sprite_attacking = sEagleEyeAttack;  // Your attacking/swing sprite
 frameCounter =0;
+
+path = path_add();

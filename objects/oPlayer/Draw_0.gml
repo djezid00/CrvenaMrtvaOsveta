@@ -8,8 +8,3 @@ draw_self();
 
 draw_my_weapon();
 
-//draw hp as num
-//draw_text(x,y, string(hp));
-
-
-	

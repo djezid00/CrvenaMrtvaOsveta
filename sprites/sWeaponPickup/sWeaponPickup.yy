@@ -12,16 +12,14 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"f661546e-0ca6-49df-9c2f-35ff6f1d7f99","name":"f661546e-0ca6-49df-9c2f-35ff6f1d7f99","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"df465b72-078d-4212-929f-c05f39ffba2e","name":"df465b72-078d-4212-929f-c05f39ffba2e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"145b6b13-f060-4433-8ac9-869a64260596","name":"145b6b13-f060-4433-8ac9-869a64260596","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"eb949a73-ab72-4fbb-b422-f1fb5cfcd20f","name":"eb949a73-ab72-4fbb-b422-f1fb5cfcd20f","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
-  "height":11,
+  "height":10,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"fc5eb836-22df-4d7d-96e6-395a01f9a405","blendMode":0,"displayName":"default","isLocked":false,"name":"fc5eb836-22df-4d7d-96e6-395a01f9a405","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"ce8ceb46-a23e-4a4c-8930-1080cda3146e","blendMode":0,"displayName":"default","isLocked":false,"name":"ce8ceb46-a23e-4a4c-8930-1080cda3146e","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"sWeaponPickup",
   "nineSlice":null,
@@ -51,7 +49,7 @@
     },
     "eventStubScript":null,
     "eventToFunction":{},
-    "length":3.0,
+    "length":1.0,
     "lockOrigin":false,
     "moments":{
       "$KeyframeStore<MomentsEventKeyframe>":"",
@@ -71,14 +69,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"f661546e-0ca6-49df-9c2f-35ff6f1d7f99","path":"sprites/sWeaponPickup/sWeaponPickup.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"aa64fb49-c0f0-43a3-ab50-0715eea10b33","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"df465b72-078d-4212-929f-c05f39ffba2e","path":"sprites/sWeaponPickup/sWeaponPickup.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"6d5da8a3-ac90-4779-a6be-fb501c3bd4ff","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"145b6b13-f060-4433-8ac9-869a64260596","path":"sprites/sWeaponPickup/sWeaponPickup.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"a6c79756-2a1e-4643-9ea9-fcd965a8b870","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"eb949a73-ab72-4fbb-b422-f1fb5cfcd20f","path":"sprites/sWeaponPickup/sWeaponPickup.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"da865130-849a-4955-9fe0-9e0339d3b2d3","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
@@ -94,5 +86,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":24,
+  "width":34,
 }

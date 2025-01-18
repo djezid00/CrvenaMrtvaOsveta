@@ -36,3 +36,6 @@ weapon = global.PlayerWeapons[selectedWeapon];
 //sound for shooting
 soundStage = 0;      // Current stage of sound sequence
 soundTimer = 0;      // Timer to delay between sounds
+
+isReloading = false;
+reloadTimer = 60;
