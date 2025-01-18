@@ -25,9 +25,26 @@ mask_index = sPlayerDown;
 //weapon info 
 shootTimer =0;
 //adding weapons to the weapon inv
-array_push(global.PlayerWeapons,global.WeaponList.Colt_Single_Action_Army);
-array_push(global.PlayerWeapons,global.WeaponList.Smith_Wesson_Model_3);
-array_push(global.PlayerWeapons,global.WeaponList.Shotgun);
+if(array_length(global.PlayerWeapons) == 0){ 
+	array_push(global.PlayerWeapons,global.WeaponList.Colt_Single_Action_Army);
+	array_push(global.PlayerWeapons,global.WeaponList.Smith_Wesson_Model_3);
+	array_push(global.PlayerWeapons,global.WeaponList.Shotgun);
+}
+else {
+	global.PlayerWeapons = [];
+	
+	global.WeaponList.Colt_Single_Action_Army.currentMagazineAmmo = 6;
+	global.WeaponList.Colt_Single_Action_Army.totalAmmo = 24;
+	array_push(global.PlayerWeapons,global.WeaponList.Colt_Single_Action_Army);
+	
+	global.WeaponList.Smith_Wesson_Model_3.currentMagazineAmmo = 6;
+	global.WeaponList.Smith_Wesson_Model_3.totalAmmo = 24;
+	array_push(global.PlayerWeapons,global.WeaponList.Smith_Wesson_Model_3);
+	
+	global.WeaponList.Shotgun.currentMagazineAmmo = 2;
+	global.WeaponList.Shotgun.totalAmmo = 16;
+	array_push(global.PlayerWeapons,global.WeaponList.Shotgun);
+}
 
 selectedWeapon = 2;
 weapon = global.PlayerWeapons[selectedWeapon];
