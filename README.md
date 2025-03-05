@@ -14,6 +14,11 @@ Red Dead Revenge (Crvena Mrtva Osveta) is a Western-themed top-down shooter deve
 - Sound effects and background music
 - Optimized performance for smooth gameplay
 
+  ## Screenshots
+* **Menu**
+ 
+    ![Menu](https://drive.google.com/file/d/1J2YQxG7rZSLR1L8PRm3-TaZCJv6W_yrL/view?usp=sharing)
+
 ## Development
 This game was developed as a seminar project for the Computer Graphics course to demonstrate the capabilities of GameMaker Studio 2.
 
