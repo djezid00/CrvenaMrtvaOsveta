@@ -3,7 +3,7 @@
 ## About
 Red Dead Revenge (Crvena Mrtva Osveta) is a Western-themed top-down shooter developed in GameMaker Studio 2. This project showcases the creation of a pixel art game blending complex gameplay mechanics, AI implementation, and performance optimization.
 ## Download
-<span style="color:green">You can download installation file for Crvena Mrtva Osveta from https://github.com/djezid00/Crvena-Mrtva-Osveta-exe-installation-file.git </span>
+You can find game screenshots and download installation file for Crvena Mrtva Osveta from: https://github.com/djezid00/Crvena-Mrtva-Osveta-exe-installation-file.git
 ## Features
 - Pixel art graphics in Western style
 - Top-down shooter gameplay
